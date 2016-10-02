@@ -7,7 +7,7 @@ var interval = setInterval(function () { //#B
 
 function read() {
   var readout = sensorLib.read(); //#C
-  console.log('Temperature: ' + (readout.temperature.toFixed(2))*(9/5)+32) + 'C, ' + //#D
+  console.log('Temperature: ' + (readout.temperature.toFixed(2)*(9/5)+32) + 'C, ' + //#D
     'humidity: ' + readout.humidity.toFixed(2) + '%');
 };
 
