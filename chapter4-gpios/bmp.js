@@ -1,7 +1,6 @@
 var i2c = require('i2c');
 var address = 0x77;
-var wire = new i2c();
-wire.setAddress(address);
+var wire = new i2c(address, {device: '/dev/i2c-0'}); // point to your i2c address, debug provides REPL interface 
 
 var BMP280 = require('node-bmp280');
  
