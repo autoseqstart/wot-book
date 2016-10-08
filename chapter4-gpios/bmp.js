@@ -1,5 +1,5 @@
 var i2c = require('i2c');
-var address = 0x77;
+i2c.setAddress(0x77);
 
 var BMP280 = require('node-bmp280');
  
