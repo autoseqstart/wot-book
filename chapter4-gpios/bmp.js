@@ -5,7 +5,7 @@ wire.setAddress(address);
 
 var BMP280 = require('node-bmp280');
  
-var barometer = new BMP280();
+var barometer = new BMP280(0x77);
  
 barometer.begin(function(err) {
     if (err) {
